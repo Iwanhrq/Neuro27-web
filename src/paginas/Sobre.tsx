@@ -132,7 +132,7 @@ export function Sobre() {
                     </div>
                 </section>
 
-                
+
                 <section className={estilos.secao}>
                     <div className={estilos.sobre}>
                         <h1 className={estilos.tituloIntegrantes}>Integrantes</h1>
@@ -147,7 +147,7 @@ export function Sobre() {
                                     alt={`Foto de ${integranteAtual.nome}`}
                                     className={estilos.imagemPerfil}
                                 />
-                            </div>
+                            </div>   
                             <div className={estilos.cartaoIntegrante}>
                                 <h2 className={estilos.nomeIntegrante}>{integranteAtual.nome}</h2>
                                 <div className={estilos.tags}>
