@@ -11,9 +11,10 @@ export function ModalMensagem({exibir, ocultar, titulo, texto}: ModalMensagemPro
     if (exibir) {
         return(
             <div className={estilos.conteiner}>
+                <p className={estilos.titulo}>{titulo}</p>
+                
                 <div className={estilos.modal}>
-                    <p className={estilos.titulo}>{titulo}</p>
-
+                    
                     <div className={estilos.conteinerMensagem}>
                         <p className={estilos.mensagem}>{
                             texto.split('\n').map( (linha, index) => 

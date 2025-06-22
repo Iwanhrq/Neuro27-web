@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0;
+    padding-bottom: 150px;
 }
 
 .secao {
@@ -26,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem;
     box-sizing: border-box;
 }
 
@@ -129,8 +130,8 @@
 }
 
 .odsIcon {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -254,7 +255,7 @@
 .tituloIntegrantes {
     position: relative;
     font-size: 3.2rem;
-    padding-bottom: 5px;
+    padding: 100px 0 5px 0;
 }
 
 .tituloIntegrantes::after {
@@ -271,17 +272,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
     margin-top: 2rem;
 }
 
 .imagemContainer {
     flex-shrink: 0;
-    border-radius: 50% 50% 0 50%;
+    border-radius: 10rem 10rem 0 10rem;
     overflow: hidden;
     width: 350px;
     height: 450px;
-    background-color: #d3b5ff;
+    background: linear-gradient(to bottom, 
+                rgba(178, 164, 255, 1) 0%, 
+                rgba(171, 212, 252, 1) 85%);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -305,7 +308,7 @@
     font-weight: bold;
     margin-bottom: 1rem;
     position: relative;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 .nomeIntegrante::after {
@@ -322,18 +325,18 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 40px;
     align-items: center;
 }
 
 .tag {
     width: 135px;
     height: 35px;
-    background-color: #d3b5ff;
-    color: white;
+    background-color: #B2A4FF;
+    color: var(--branco);
     padding: 0.3rem 0.7rem;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,8 +344,8 @@
 }
 
 .descricao {
-    font-size: 1rem;
-    color: #333;
+    font-size: 1.2rem;
+    color: #000;
     margin: 0.3rem 0;
 }
 
