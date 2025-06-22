@@ -15,19 +15,19 @@ interface Ods {
 const odsData: Ods[] = [
     {
         id: 3,
-        imagem: '/src/assets/ods3.png',
+        imagem: '/src/assets/ods3.svg',
         titulo: 'ODS 3: Saúde e Bem-Estar',
         texto: 'Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades. Inclui metas para reduzir a mortalidade materna e neonatal, acabar com epidemias de doenças transmissíveis, e garantir o acesso universal a serviços de saúde sexual e reprodutiva.'
     },
     {
         id: 4,
-        imagem: '/src/assets/ods4.png',
+        imagem: '/src/assets/ods4.svg',
         titulo: 'ODS 4: Educação de Qualidade',
         texto: 'Assegurar a educação inclusiva e equitativa de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos. Visa garantir que todas as meninas e meninos completem o ensino primário e secundário gratuito, e tenham acesso a um desenvolvimento de qualidade na primeira infância.'
     },
     {
         id: 10,
-        imagem: '/src/assets/ods10.png',
+        imagem: '/src/assets/ods10.svg',
         titulo: 'ODS 10: Redução das Desigualdades',
         texto: 'Reduzir a desigualdade dentro dos países e entre eles. Foca em alcançar e sustentar o crescimento da renda dos 40% mais pobres da população a uma taxa maior que a média nacional, e em empoderar e promover a inclusão social, econômica e política de todos.'
     }
@@ -131,6 +131,8 @@ export function Sobre() {
                         </div>
                     </div>
                 </section>
+
+                
                 <section className={estilos.secao}>
                     <div className={estilos.sobre}>
                         <h1 className={estilos.tituloIntegrantes}>Integrantes</h1>
