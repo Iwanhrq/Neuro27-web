@@ -1,0 +1,152 @@
+.backgroundWrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/src/assets/obra1.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 68% 0, 63% 100%, 0% 100%);
+    z-index: 1;
+}
+
+.bgGray {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--cinza-claro, #f0f0f0);
+    clip-path: polygon(68% 0, 100% 0, 100% 100%, 63% 100%);
+    z-index: 2;
+}
+
+.conteiner {
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.formulario {
+    width: 950px;
+    height: 600px;
+    background-color: var(--cinza-claro);
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Lado da Imagem */
+.imagemContainer {
+    flex: 1;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.imagemPoligono {
+    width: 95%;
+    height: 95%;
+    background-image: url('/src/assets/obra1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    border-radius: 50px;
+}
+
+/* Lado dos Campos */
+.loginCampos {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--branco);
+}
+
+.tituloProjeto {
+    align-self: flex-start;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-left: -35px;
+    color: var(--preto); /* ajuste conforme seu tema */
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.campo {
+    padding: 12px 12px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-size: 1rem;
+    width: 80%;
+    border: 1px solid var(--cinza-claro);
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80%;
+    border: none
+}
+
+.mensagem {
+    color: var(--roxo);
+    margin-top: 5px;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.novoUsuario {
+    background-color: transparent;
+    border: none;
+    color: var(--preto);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    font-size: 13px;
+}
+
+.icone {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+span {
+    color: var(--roxo);
+    cursor: pointer;
+}

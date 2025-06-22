@@ -1,0 +1,102 @@
+.conteiner {
+    grid-area: cabecalho;
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.titulo {
+    color: var(--branco);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.icone {
+    color: var(--azul-claro);
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 10px;
+}
+
+.botao {
+    background-color: transparent;
+    color: var(--azul-claro);
+    border: 1px solid var(--azul-claro);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao:hover {
+    background-color: var(--azul-claro);
+    color: var(--cinza-escuro2);
+}
+
+.link {
+    color: var(--branco);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: var(--azul-claro);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: var(--branco);
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: var(--azul-claro);
+} 

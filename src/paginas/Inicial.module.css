@@ -1,0 +1,164 @@
+.gridConteiner {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: 
+        'cabecalho'
+        'conteudo';
+    background-color: var(--branco);
+}
+
+main {
+    grid-area: conteudo;
+    overflow-y: auto;
+}
+
+.banner {
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    height: 30%;
+}
+
+.bannerImagem {
+    max-width: 200px; 
+    height: auto;
+}
+
+.secao {
+    padding: 2rem;
+}
+
+.tituloSecao {
+    font-size: 2rem;
+    color: var(--preto);
+    margin-bottom: 2rem;
+}
+
+.carouselWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.neuroContainer {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0 1rem;
+}
+.neuroContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.neuroItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.neuroItem:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.circulo {
+    cursor: pointer;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    border: 2px solid var(--azul-claro);
+}
+
+.emocoesContainer {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0 1rem;
+}
+
+.emocoesContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.emocaoCard {
+    cursor: pointer;
+    width: 225px;
+    height: 270px;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 8px;
+    overflow: hidden; /* Garante que o border-radius seja aplicado nas bordas internas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.emocaoCard:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.emocaoParteSuperior {
+    background-color: var(--azul-claro);
+    padding: 1rem;
+    height: 200px;
+}
+
+.emocaoParteSuperior p {
+    color: var(--preto);
+    font-weight: bold;
+}
+
+.emocaoParteInferior {
+    background-color: var(--branco);
+    padding: 1.5rem 1rem;
+    height: 70px;
+}
+
+.emocaoParteInferior p {
+    color: var(--preto);
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--azul-escuro);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: color 0.2s ease-in-out;
+}
+
+.arrow:hover {
+    color: var(--azul-claro);
+}
+
+.arrowLeft {
+    left: 0;
+}
+
+.arrowRight {
+    right: 0;
+}
+

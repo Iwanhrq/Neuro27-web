@@ -1,0 +1,54 @@
+.gridConteiner {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: 
+        'cabecalho'
+        'conteudo';
+}
+
+.conteudo {
+    grid-area: conteudo;
+    background-color: var(--branco);
+    padding: 40px 20px;
+    overflow-y: auto;
+} 
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    color: var(--preto);
+    border-bottom: 3px solid var(--preto);
+    padding-bottom: 0.5rem;
+}
+
+.texto {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--cinza-escuro2);
+    text-align: justify;
+}
+
+.botaoVoltar {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.botaoVoltar:hover {
+    background-color: var(--azul-claro);
+} 
