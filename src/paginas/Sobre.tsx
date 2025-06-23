@@ -17,19 +17,19 @@ const odsData: Ods[] = [
         id: 3,
         imagem: '/src/assets/ods3.svg',
         titulo: 'ODS 3: Saúde e Bem-Estar',
-        texto: 'Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades. Inclui metas para reduzir a mortalidade materna e neonatal, acabar com epidemias de doenças transmissíveis, e garantir o acesso universal a serviços de saúde sexual e reprodutiva.'
+        texto: 'O projeto alinha-se à meta 3.4, que busca melhorar a saúde mental e o bem-estar por meio de estratégias de prevenção e promoção. O Neuro27 contribui com essa meta ao oferecer um recurso digital educativo que estimula o autoconhecimento emocional e fornece estratégias práticas para o fortalecimento da saúde mental cotidiana.'
     },
     {
         id: 4,
         imagem: '/src/assets/ods4.svg',
         titulo: 'ODS 4: Educação de Qualidade',
-        texto: 'Assegurar a educação inclusiva e equitativa de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos. Visa garantir que todas as meninas e meninos completem o ensino primário e secundário gratuito, e tenham acesso a um desenvolvimento de qualidade na primeira infância.'
+        texto: 'O projeto atende à meta 4.7, que visa garantir que todos adquiram conhecimentos e habilidades necessárias para promover o desenvolvimento sustentável, incluindo a valorização da saúde e bem-estar. O aplicativo facilita a compreensão de temas científicos complexos — como neurociência emocional e psicologia — de forma acessível e interativa, incentivando habilidades socioemocionais como empatia, autorregulação e consciência emocional.'
     },
     {
         id: 10,
         imagem: '/src/assets/ods10.svg',
         titulo: 'ODS 10: Redução das Desigualdades',
-        texto: 'Reduzir a desigualdade dentro dos países e entre eles. Foca em alcançar e sustentar o crescimento da renda dos 40% mais pobres da população a uma taxa maior que a média nacional, e em empoderar e promover a inclusão social, econômica e política de todos.'
+        texto: 'Ao transformar conteúdos científicos em uma linguagem acessível, o projeto democratiza o acesso ao conhecimento, promovendo inclusão educacional e redução das barreiras ao entendimento científico por parte do público leigo, especialmente jovens e estudantes de contextos educacionais diversos.'
     }
 ];
 
@@ -46,8 +46,8 @@ const integrantes = [
     },
     {
         nome: "Mariana Araripe",
-        foto: "/src/assets/mariana.png", // Placeholder, user can change this
-        tags: ["Design", "Documentação", "Programação", "Pesquisa"], // Placeholder tags
+        foto: "/src/assets/mariana.png", 
+        tags: ["Design", "Documentação", "Programação", "Pesquisa"],
         descricao: [
             "Descrição do segundo integrante.",
             "Mais detalhes aqui.",
