@@ -39,9 +39,7 @@ const integrantes = [
         foto: "/src/assets/ivan.png",
         tags: ["Design", "Programação", "Pesquisa", "Testes"],
         descricao: [
-            "Descrição do primeiro integrante.",
-            "Mais detalhes aqui.",
-            "..."
+            "Atua no projeto como designer e desenvolvedor. Além de contribuir com a pesquisa, é responsável pela programação da aplicação e pela realização dos testes, garantindo a estabilidade e a usabilidade do produto final."
         ]
     },
     {
@@ -49,9 +47,7 @@ const integrantes = [
         foto: "/src/assets/mariana.png", 
         tags: ["Design", "Documentação", "Programação", "Pesquisa"],
         descricao: [
-            "Descrição do segundo integrante.",
-            "Mais detalhes aqui.",
-            "..."
+            "Atua como designer principal do projeto Neuro27. É responsável por toda a documentação e por grande parte da pesquisa, colaborando para transformar conceitos de neurociência e psicologia em soluções aplicáveis ao design da aplicação."
         ]
     }
 ];
