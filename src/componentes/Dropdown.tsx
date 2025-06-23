@@ -57,33 +57,3 @@ export function Dropdown() {
 
 
 
-
-
-
-
-{/*import { useState } from 'react';
-import estilos from './Dropdown.module.css';
-
-export function Dropdown() {
-  const [aberto, setAberto] = useState<boolean>(false);
-
-  const toggleDropdown = () => setAberto(!aberto);
-
-  return (
-    <div className={estilos.dropdownContainer}>
-      <button onClick={toggleDropdown} className={estilos.botao}>
-        Participantes
-      </button>
-      {aberto && (
-        <ul className={estilos.lista}>
-          <li className={estilos.item}>Titúlo completo</li>
-          <li className={estilos.item}>Proposta</li>
-          <li className={estilos.item}>Justificativa</li>
-          <li className={estilos.item}>Hipóteses</li>
-          <li className={estilos.item}>Público-alvo</li>
-        </ul>
-      )}
-    </div>
-  );
-}
-  */}

@@ -7,6 +7,8 @@
     --azul-claro: #BCDDFD;
     --roxo: #A283C8;
     --blur: #000000b3;
+    --roxo-pastel: #B2A4FF;
+    --azul-pastel: #ABD4FC;
 }
 
 * {
@@ -15,7 +17,15 @@
     box-sizing: border-box;
 }
 
-body, input, textarea, button {
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body,
+input,
+textarea,
+button {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -67,4 +77,3 @@ body, input, textarea, button {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--cinza-escuro1);
 }
-  

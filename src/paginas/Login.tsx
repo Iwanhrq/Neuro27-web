@@ -53,6 +53,13 @@ export function Login() {
     setModalMensagemVisivel(false)
   }
 
+  function handleKeyDown(event: React.KeyboardEvent) {
+    if (event.key === 'Enter') {
+      event.preventDefault()
+      handleSubmit(autenticarUsuario)()
+    }
+  }
+
   return (
     <div className={estilos.backgroundWrapper}>
       <div className={estilos.bgImage}></div>
@@ -61,9 +68,9 @@ export function Login() {
         <form
           className={estilos.formulario}
           onSubmit={handleSubmit(autenticarUsuario)}
+          onKeyDown={handleKeyDown}
         >
-          <div className={estilos.imagemContainer}>
-            {/* Substitua pela imagem em polígono quando tiver */}
+          <div className={estilos.imagemContainer}>  
             <div className={estilos.imagemPoligono}></div>
           </div>
 

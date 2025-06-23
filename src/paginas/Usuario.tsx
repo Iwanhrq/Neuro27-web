@@ -83,12 +83,26 @@ export function Usuario({ operacao }: UsuarioProps) {
         modal == 'mensagem' ? setModalMensagemVisivel(false) : setModalConfirmacaoVisivel(false)
     }
 
+    function handleKeyDown(event: React.KeyboardEvent) {
+        if (event.key === 'Enter') {
+            event.preventDefault()
+            if (operacao === 'novo') {
+                handleSubmit(criarUsuario)()
+            } else {
+                handleSubmit(alterarUsuario)()
+            }
+        }
+    }
+
     return (
         <div className={estilos.backgroundWrapper}>
             <div className={estilos.bgImage}></div>
             <div className={estilos.bgGray}></div>
             <div className={estilos.conteiner}>
-                <form className={estilos.formulario}>
+                <form 
+                    className={estilos.formulario}
+                    onKeyDown={handleKeyDown}
+                >
                     <div className={estilos.imagemContainer}>
                         <div className={estilos.imagemPoligono}></div>
                     </div>
